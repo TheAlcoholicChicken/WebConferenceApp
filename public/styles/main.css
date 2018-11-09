@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lateef');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+body {
+    background-color: #f3f3f3;
+    color: #221122;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.videoFrame {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#peerView {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    max-height: 50vh;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#selfView {
+    height: 100px;
+    width: 150px;
+    transform: translate(-100px, -50px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.userListRow {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.mainSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.userList {
+    padding: 50px;
+    font-size: 15px;
+}
+
+.welcome {
+    font-family: 'Lateef', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.startPageDivs {
+    display: flex;
+    justify-content: center;
+}
+
+#nameInput {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #212121;
+    font-size: 60px;
+    font-family: 'Alex Brush', cursive;
+    text-align: center;
+    width: 80vw;
+}
+
+.cursive {
+    font-family: 'Alex Brush', cursive;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.userList {
+    justify-content: center;
+    width: 80%;
+    border-top: rgba(0, 0, 0, 0.22) solid 1px;
+    margin: auto;
+}
+.userInfo {
+    font-size: 36px;
+}
+
+.userListRow {
+    font-size: 11px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.incomingCallContainer {
+    font-size: 30px;
+    display: flex;
+
+    border-bottom: rgba(0, 0, 0, 0.22) solid 1px;
+}
+
+.incomingCallContainer .btn {
+    font-size: 10px;
+    -ms-transform: translateY(58%);
+    transform: translateY(58%);
+    margin-left: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#muteToggle {
+    background-color: green;
+}
+
+#endCallButton {
+    background-color: red;
+}
